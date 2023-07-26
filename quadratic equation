@@ -1,0 +1,31 @@
+#include <math.h>
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    float d,x,y;
+    printf("enter the coefficents of a quadratic equation");
+    scanf("%d %d %d",&a,&b,&c);
+    d=pow(b,2)-(4*a*c);
+    printf("d is %f",d);
+    if(d>0)
+    {
+        printf("roots are real and distinct.");
+        x = (-b+sqrt(d))/(2*a);
+        y = (-b-sqrt(d))/(2*a);
+        printf("your roots are %f and %f",x,y);
+    }
+    else if(d==0)
+    {
+        printf("your roots are real and equal");
+        x = y = -b/(2*a);
+        printf("your roots are %f and %f",x,y);
+    }
+    else(d<0);
+    {
+        printf("your roots are imaginary");
+    }
+
+    return 0;
+}
