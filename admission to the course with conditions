@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    float m,p,c,tsum,sum;
+    printf("enter marks of maths,physics and chemistry");
+    scanf("%f %f %f",&m,&p,&c);
+    tsum = m+p+c;
+    sum = m+p;
+    if(m>=60 && p>=50 && c>=40)
+    {
+        if(tsum>=200 || sum>=150)
+        {
+            printf("Admission request accepted");
+        }
+        else
+        {
+            printf("admission request rejected");
+        }
+    }
+    else
+    {
+        printf("not eligible foe this course");
+    }
+    return 0;
+}
