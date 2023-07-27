@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <conio.h>
+int main()
+{
+   float a,l,b,area;
+   char ch;
+   printf("/nthe choices are as follows/n");
+   printf("type r for the area of reatngle/n");
+   printf("type c for the area of circle/n");
+   printf("type e for exit/n");
+   printf("enter your choice");
+   scanf("%c", &ch);
+   switch(ch);
+  { case 'r':
+   {
+       printf("enter dimensions of the rectangle/n");
+       scanf("%f %f",&l,&b);
+       area = l*b;
+       printf("area of rectangle is %f/n",area);
+       break;
+   }
+   case 'c':{
+       printf("enter radius of the circle/n");
+       scanf("%f",&a);
+       area = 3.14*a*a;
+       printf("area of circle is %f/n",area);
+       break;
+   }
+   case 'e':
+   break;
+  }
+   default:printf("invalid choice");
+   return 0;
+}
